@@ -11,6 +11,7 @@ const Login = () => {
   const [auth, setAuth] = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {

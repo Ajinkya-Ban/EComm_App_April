@@ -23,8 +23,6 @@ export default function ForgotPassword() {
         setTimeout(() => {
           navigate("/login");
         }, 5000);
-
-        //localStorage.setItem("auth", JSON.stringify(res.data));
       } else {
         toast.success(res.data.message);
       }
@@ -32,7 +30,6 @@ export default function ForgotPassword() {
       console.log(error);
       toast.error("something went wrong");
     }
-    console.log(process.env.REACT_APP_API);
   };
 
   return (
