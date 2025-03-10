@@ -211,7 +211,7 @@ How to create the private routing using react-router-dom?
 9. create the Spinner.jsx file inside the components folder, in that add Spinner related code.
 10. After this create one private route in app.js file, by using this we can get the dashboard page only when we are the
      autheniticated user.
-
+=======================================================================================================================================================================
 
 Forget password / Role based login:
 ------------------------------------------------------------
@@ -223,3 +223,24 @@ For this we need to perform the following operations.
 5) After that go to the Login page and add Forgot password button and navigate it.
 6) Create the page called as ForgotPassword.jsx inside components.
 7) Add the code from login page and do some changes like add answer field, email, new password field. Also change the API end points also.
+8) 
+==================================================================================================================================================================
+
+Creating admin and user panal?
+-------------------------------------------------------
+1. First go the atlas server and make it one record as admin by changing role to 1.
+2. Create folder inside the pages name it as Admin and then create jsx file inside this name as AdminDashboard.jsx
+3. Create one route for admin in AuthRoute name it as /admin-auth
+4. Create the private route for admin also then go to Routes folder of client and create the one file name as AdminRoute copy the same code from private route.
+5. In app.js create AdminRoute path as we can create for privateRoute
+6. Create the resuable components in the Layout folder name as AdminMenu.js
+7. go to the bootstrap website and search for list to create the menu.
+8. Copy the code from bootstrap and paste it into AdminMenu.js as in code.
+9. Go to the AdminDashboard and add AdminMenu here as well as display the admin details.
+10. Create the pages in Admin folder like CreateCategory and CreateProduct and Users.
+11. In App.js file create the route for the category, product and for users.
+12. Create the UserMenu for that in Layout add file called UserMenu.jsx copy the same code from AdminMenu
+13. Create the pages under user menu that is profile.jsx and orders.jsx
+14.In App.js add routes for users that is Profile, Orders
+15. Create the menus in Dashboard of users like in AdminMenu
+=====================================================================================================================================================================
