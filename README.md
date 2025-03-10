@@ -213,7 +213,7 @@ How to create the private routing using react-router-dom?
      autheniticated user.
 =======================================================================================================================================================================
 
-Forget password / Role based login:
+*Forget password / Role based login:*
 ------------------------------------------------------------
 For this we need to perform the following operations.
 1) Add new field in the model called as question.
@@ -226,7 +226,7 @@ For this we need to perform the following operations.
 8) 
 ==================================================================================================================================================================
 
-Creating admin and user panal?
+*Creating admin and user panal?*
 -------------------------------------------------------
 1. First go the atlas server and make it one record as admin by changing role to 1.
 2. Create folder inside the pages name it as Admin and then create jsx file inside this name as AdminDashboard.jsx
