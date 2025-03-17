@@ -10,7 +10,7 @@ const Profile = () => {
           <div className="col-md-3">
             <UserMenu />
           </div>
-          <div className="col-md-9">
+          <div className="col-md-8">
             <h1>Your Profile</h1>
           </div>
         </div>

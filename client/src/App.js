@@ -24,6 +24,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
+
         <Route path="/Dashboard" element={<PrivateRoute />}>
           <Route path="user" element={<Dashboard />} />
           <Route path="user/orders" element={<Orders />} />
