@@ -1,16 +1,25 @@
 import express from "express";
-import { isAdmin, requireSignIn } from "../middlewares/authMiddleware";
+import { isAdmin, requireSignIn } from "../middlewares/authMiddleware.js";
 import {
   createProductController,
+  deleteProductController,
   getAllProductController,
   getSingleProductController,
+  productPhotoController,
   updateProdcutController,
-} from "../controllers/productController";
+} from "../controllers/productController.js";
+import formidableMiddleware from "express-formidable";
 
 const router = express.Router();
 
 //add new product
-router.post("/create-product", requireSignIn, isAdmin, createProductController);
+router.post(
+  "/create-product",
+  requireSignIn,
+  isAdmin,
+  formidableMiddleware(),
+  createProductController
+);
 
 //update product
 router.put(

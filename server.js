@@ -6,6 +6,7 @@ import morgan from "morgan";
 import authRoutes from "./routes/authRoutes.js";
 import cors from "cors";
 import categoryRoute from "./routes/categoryRoute.js";
+import productRoute from "./routes/productRoute.js";
 
 //configure dotenv file
 env.config();
@@ -26,6 +27,9 @@ app.use("/api/v1/auth", authRoutes);
 
 // define the root path for category
 app.use("/api/v1/category", categoryRoute);
+
+// define the root path for products
+app.use("/api/v1/products", productRoute);
 
 const port = process.env.PORT;
 app.listen(port, () => {

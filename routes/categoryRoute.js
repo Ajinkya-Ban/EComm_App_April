@@ -38,7 +38,7 @@ router.put(
 );
 
 // route for get all category
-router.get("/all-category", limiter, getAllCategoryController);
+router.get("/all-category", getAllCategoryController);
 
 // get a single category by slug
 router.get("/single-category/:slug", getSingleCategoryController);
