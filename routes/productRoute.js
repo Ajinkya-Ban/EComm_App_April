@@ -26,6 +26,7 @@ router.put(
   "/update-product/:pid",
   requireSignIn,
   isAdmin,
+  formidableMiddleware(),
   updateProdcutController
 );
 
